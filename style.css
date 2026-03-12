@@ -1,0 +1,218 @@
+/* 1. BRAND GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Matches LevelUp font [cite: 1] */
+    border-radius: 0 !important; /* The 'Square' in Square Care: No rounded corners */
+}
+
+body {
+    background-color: #ffffff;
+    color: #111;
+    line-height: 1.6;
+}
+
+/* 2. HEADER & NAVIGATION */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #fff;
+    border-bottom: 2px solid #000; /* Bold clinical line */
+    position: sticky; /* Stays at top  */
+    top: 0;
+    z-index: 1000;
+}
+
+header h2 {
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #444;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* 3. HERO SECTION (Home Page) */
+.hero {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f9f9f9; /* Soft clinical grey */
+    border-bottom: 1px solid #eee;
+}
+
+.hero h1 {
+    font-size: 50px;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
+}
+
+/* 4. CONTENT PAGES & CARDS */
+.page {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness  */
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #000; /* Square border */
+    padding: 20px;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    background: #f0f0f0;
+    transform: translateY(-5px); /* Interaction feedback  */
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Prevents stretching  */
+    margin-bottom: 15px;
+    filter: grayscale(100%); /* Premium black & white look */
+}
+
+.card:hover img {
+    filter: grayscale(0%); /* Color pops on hover */
+}
+
+/* 5. BUTTONS */
+.btn, button {
+    background: #000;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #444;
+}
+
+/* 6. SERVICE DETAILS (Routine Page) */
+.details {
+    display: none; /* Hidden by default  */
+    margin-top: 15px;
+    padding: 15px;
+    background: #fafafa;
+    border-top: 1px solid #000;
+    text-align: left;
+}
+
+/* 7. CART PANEL (Shop Page) */
+.cart-panel {
+    position: fixed;
+    right: -400px; /* Hidden off-screen  */
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background: white;
+    border-left: 2px solid #000;
+    padding: 30px;
+    transition: 0.4s;
+    z-index: 2000;
+}
+
+.cart-panel.active {
+    right: 0; /* Slides in */
+}
+
+/* 8. FORMS (Contact Page) */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #000;
+    font-size: 14px;
+}
+
+/* FOOTER STYLING */
+footer {
+    background-color: #000; /* Solid black for a premium feel */
+    color: #fff;
+    padding: 60px 10% 20px 10%;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 40px;
+}
+
+.footer-col h3 {
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.footer-col h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.footer-col a {
+    display: block;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: #fff;
+}
+
+.social-links i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 11px;
+    color: #666;
+    letter-spacing: 1px;
+}
