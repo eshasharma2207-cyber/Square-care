@@ -18,28 +18,62 @@
         </nav>
     </header>
 
-    <section class="page">
-        <h1>Your 2-Step Routine</h1>
-        <div class="card-container">
-            <div class="card">
-                <h3>Step 1: Cleanse</h3>
-                <button onclick="toggleDetails('cleanse')">Know More</button>
-                <div id="cleanse" class="details">
-                    <h4>The Reset Cleanser</h4>
-                    <p>Removes impurities without stripping moisture.</p>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Step 2: Balance</h3>
-                <button onclick="toggleDetails('balance')">Know More</button>
-                <div id="balance" class="details">
-                    <h4>The pH Toner</h4>
-                    <p>Balances your skin's natural acidic mantle.</p>
-                </div>
+   <section class="page">
+    <h1>The Square Methodology</h1>
+    <p>Five precise steps to skin health. Click to see the science behind each.</p>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Step 01: Cleanse</h3>
+            <p>Preparation of the canvas.</p>
+            <button onclick="toggleDetails('cleanse')">Know More</button>
+            <div id="cleanse" class="details">
+                <h4>Purifying Reset</h4>
+                <p>Removes oil and pollutants without disrupting the moisture barrier. Use AM/PM.</p>
             </div>
         </div>
-    </section>
 
+        <div class="card">
+            <h3>Step 02: Tone</h3>
+            <p>pH Alignment.</p>
+            <button onclick="toggleDetails('tone')">Know More</button>
+            <div id="tone" class="details">
+                <h4>Balancing Liquid</h4>
+                <p>Prepares skin to absorb active ingredients by restoring a slightly acidic pH level.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Step 03: Treat</h3>
+            <p>Active Correction.</p>
+            <button onclick="toggleDetails('treat')">Know More</button>
+            <div id="treat" class="details">
+                <h4>Targeted Serums</h4>
+                <p>Concentrated formulas designed to treat specific concerns like acne, aging, or dullness.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Step 04: Hydrate</h3>
+            <p>Barrier Support.</p>
+            <button onclick="toggleDetails('hydrate')">Know More</button>
+            <div id="hydrate" class="details">
+                <h4>Geometric Moisture</h4>
+                <p>Locks in hydration and prevents transepidermal water loss using pure ceramides.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Step 05: Protect</h3>
+            <p>Damage Prevention.</p>
+            <button onclick="toggleDetails('protect')">Know More</button>
+            <div id="protect" class="details">
+                <h4>Shield SPF 50</h4>
+                <p>The most important step. Broad-spectrum protection against UVA/UVB and blue light.</p>
+            </div>
+        </div>
+    </div>
+</section>
     <script src="script.js"></script>
 </body>
 <footer>
