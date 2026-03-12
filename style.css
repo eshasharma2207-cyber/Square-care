@@ -216,3 +216,30 @@ footer {
     color: #666;
     letter-spacing: 1px;
 }
+
+/* Update the container to allow wrapping into rows */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* This makes products jump to a new line */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 1200px; /* Keeps the shop from getting too wide on huge monitors */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price {
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Ensure images have a consistent 'Square' size */
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Forces the image into a perfect square */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
