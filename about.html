@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About - Square Care
+    <title>Square Care | Home
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+<body onload="welcomeMessage()">
     <header>
         <h2>SQUARE CARE</h2>
         <nav>
@@ -16,20 +17,32 @@
             <a href="services.html">Routine</a>
             <a href="contact.html">Consult</a>
         </nav>
+        <div class="cart" onclick="toggleCart()">
+            🛒 <span id="cartCount">0</span>
+        </div>
     </header>
 
-    <section class="page">
-        <h1>Our Philosophy</h1>
-        <p>We believe skincare shouldn't be a guessing game. Our "Square" method simplifies dermatological science into three easy steps.</p>
-        <h3>Our Core Values</h3>
-        <ul>
-            <li>Transparency in labeling</li>
-            <li>Cruelty-free testing</li>
-            <li>Eco-friendly square packaging</li>
-        </ul>
+    <section class="hero">
+        <h1>SKINCARE SQUARED.</h1>
+        <p>Scientific formulas. Minimalist routines. Clinical results.</p>
+        <a class="btn" href="products.html">SHOP COLLECTION</a>
     </section>
 
-    <script src="script.js"></script>
+    <section class="page">
+        <h1>The Square Standard</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571">
+                <h3>Pure Ingredients</h3>
+                <p>Only what your skin needs, nothing more.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be">
+                <h3>Proven Results</h3>
+                <p>Tested in clinical environments for safety.</p>
+            </div>
+        </div>
+    </section>
 </body>
 <footer>
     <div class="footer-container">
