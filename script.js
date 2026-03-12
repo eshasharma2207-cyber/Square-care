@@ -67,3 +67,25 @@ if(contactForm) {
         this.reset();
     });
 }
+
+function toggleDetails(id) {
+    // 1. Find the element the user clicked
+    let current = document.getElementById(id);
+    
+    // 2. Get all other detail boxes on the page
+    let allDetails = document.querySelectorAll('.details');
+    
+    // 3. Loop through them and hide them (except the one clicked)
+    allDetails.forEach((detail) => {
+        if (detail.id !== id) {
+            detail.style.display = "none";
+        }
+    });
+
+    // 4. Toggle the clicked one
+    if (current.style.display === "block") {
+        current.style.display = "none";
+    } else {
+        current.style.display = "block";
+    }
+}
